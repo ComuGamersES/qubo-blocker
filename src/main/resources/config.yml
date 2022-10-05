@@ -1,0 +1,6 @@
+# Whether to log a warning when connections are closed or not.
+log-warning: true
+
+# A list of addresses to which connection should stay open. Set to '[]' to trust absolutely no one.
+trusted-addresses:
+  - 1.1.1.1
