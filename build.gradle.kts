@@ -23,6 +23,10 @@ tasks {
     shadowJar {
         archiveBaseName.set(rootProject.name)
         archiveClassifier.set("")
+
+        val pkg = "com.comugamers.quboblocker.lib"
+        relocate("com.github.retrooper.packetevents", "$pkg.packetevents")
+        relocate("io.github.retrooper.packetevents", "$pkg.packetevents")
     }
 
     named<DefaultTask>("build") {
